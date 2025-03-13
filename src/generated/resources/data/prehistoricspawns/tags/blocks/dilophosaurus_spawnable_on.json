@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#prehistoricspawns:beach_spawn_blocks",
+    "#prehistoricspawns:badlands_spawn_blocks",
+    "#prehistoricspawns:desert_spawn_blocks"
+  ]
+}

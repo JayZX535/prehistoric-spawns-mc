@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.jayzx535.prehistoricspawns.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "prehistoricspawns.refmap.json",
+  "mixins": [
+	"AnimalMixin",
+	"PrehistoricMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
