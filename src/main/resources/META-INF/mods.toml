@@ -14,8 +14,14 @@ description='''A mod that allows the dinosaurs from Fossils & Archeology: Reviva
 
 Dinosaurs and other prehistoric creatures are added by Fossils & Archeology: Revival and are NOT from this mod!  All that Prehistoric Spawns does is allow them to spawn configurably in the world.  If you encounter an issue with natural spawning, please refer to the Prehistoric Spawns issue tracker, NOT F&A's!'''
 [[dependencies.prehistoricspawns]]
+modId="fossil"
+mandatory=true
+versionRange="[9.1.3.0,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.prehistoricspawns]]
 modId="corvicraftspawns"
 mandatory=true
 versionRange="[2.2,)"
 ordering="NONE"
-side="SERVER"
+side="BOTH"
