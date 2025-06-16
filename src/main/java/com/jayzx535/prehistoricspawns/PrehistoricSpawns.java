@@ -15,7 +15,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.level.LevelAccessor;
@@ -174,13 +173,13 @@ public class PrehistoricSpawns {
 			new CorvicraftSpawnEntry.Builder(ModEntities.DILOPHOSAURUS.get()).withWeight(2).withPackMin(1).withPackMax(4).withRarityModifiers(new RarityModifiers(0.75D)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMORPHODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DODO.get()).withWeight(8).withPackMin(1).withPackMax(4).withRarityModifiers(new RarityModifiers(0.75D)).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(2).withRarityModifiers(new RarityModifiers(0.25D)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withPackMin(1).withPackMax(2).withRarityModifiers(new RarityModifiers(0.25D)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PACHYCEPHALOSAURUS.get()).withWeight(12).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5D)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PTERANODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build()
 		).build(), getBeachBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("rocky_beach").withSpawns(
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMORPHODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withRarityModifiers(new RarityModifiers(0.25D)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withPackMin(1).withRarityModifiers(new RarityModifiers(0.25D)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PTERANODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build()
 		).build(), getRockyBeachBiomes())
 		
@@ -455,12 +454,12 @@ public class PrehistoricSpawns {
 		// Swamp
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("swamp").withSpawns(
 			new CorvicraftSpawnEntry.Builder(ModEntities.CONFUCIUSORNIS.get()).withWeight(12).withPackMin(1).withPackMax(4).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.CRASSIGYRINUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.25F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.CRASSIGYRINUS.get()).withWeight(8).withPackSize(1).withRarityModifiers(new RarityModifiers(0.25F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMETRODON.get()).withWeight(8).withPackMin(2).withPackMax(4).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMORPHODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(8).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.EDAPHOSAURUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(4).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PACHYRHINOSAURUS.get()).withWeight(4).withPackMin(1).withPackMax(2).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PARASAUROLOPHUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.MEGANEURA.get()).withWeight(20).withPackMin(2).withPackMax(6).build(),
@@ -473,13 +472,13 @@ public class PrehistoricSpawns {
 			new CorvicraftSpawnEntry.Builder(ModEntities.ANKYLOSAURUS.get()).withWeight(4).withPackSize(1).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.CERATOSAURUS.get()).withWeight(8).withPackSize(1).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.CONFUCIUSORNIS.get()).withWeight(12).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.CRASSIGYRINUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.25F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.CRASSIGYRINUS.get()).withWeight(8).withPackSize(1).withRarityModifiers(new RarityModifiers(0.25F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMETRODON.get()).withWeight(8).withPackMin(2).withPackMax(4).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMORPHODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(8).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.EDAPHOSAURUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.GALLIMIMUS.get()).withWeight(8).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(4).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PACHYRHINOSAURUS.get()).withWeight(4).withPackMin(1).withPackMax(2).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PARASAUROLOPHUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.MEGANEURA.get()).withWeight(20).withPackMin(2).withPackMax(6).build(),
@@ -490,12 +489,12 @@ public class PrehistoricSpawns {
 		).build(), getMarshBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("waterlogged_swamp").withSpawns(
 			new CorvicraftSpawnEntry.Builder(ModEntities.CONFUCIUSORNIS.get()).withWeight(12).withPackMin(1).withPackMax(4).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.CRASSIGYRINUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.25F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.CRASSIGYRINUS.get()).withWeight(8).withPackSize(1).withRarityModifiers(new RarityModifiers(0.25F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMETRODON.get()).withWeight(8).withPackMin(2).withPackMax(4).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMORPHODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(12).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.EDAPHOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(8).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.MEGANEURA.get()).withWeight(20).withPackMin(2).withPackMax(6).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.SARCOSUCHUS.get()).withWeight(8).withPackMin(1).withPackMax(3).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.SPINOSAURUS.get()).withWeight(4).withPackSize(1).build(),
@@ -581,67 +580,67 @@ public class PrehistoricSpawns {
 		).build(), getWastelandBiomes())*/
 		
 		// Ocean
-		/**.withSpawnSet(new CorvicraftSpawnSet.Builder("ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MOSASAURUS.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).build()
+		.withSpawnSet(new CorvicraftSpawnSet.Builder("ocean").withSpawns(
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(1).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MOSASAURUS.get()).withWeight(1).withPackSize(1).build()
 		).build(), getOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("deep_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.DICRANURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.LIOPLEURODON.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(2).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.LONCHODOMAS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.PLESIOSAURUS.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMax(1).withPackMax(2).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.SCOTOHARPES.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.WALLISEROPS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build()
+			new CorvicraftSpawnEntry.Builder(ModEntities.DICRANURUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.LIOPLEURODON.get()).withWeight(4).withPackMin(1).withPackMax(2).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.LONCHODOMAS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(4).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.PLESIOSAURUS.get()).withWeight(1).withPackMax(1).withPackMax(2).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.SCOTOHARPES.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.WALLISEROPS.get()).withWeight(12).withPackMin(1).withPackMax(3).build()
 		).build(), getDeepOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("cold_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MOSASAURUS.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).build()
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MOSASAURUS.get()).withWeight(1).withPackSize(1).build()
 		).build(), getColdOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("deep_cold_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.DICRANURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.LIOPLEURODON.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(2).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.LONCHODOMAS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.PLESIOSAURUS.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMax(1).withPackMax(2).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.SCOTOHARPES.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.WALLISEROPS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build()
+			new CorvicraftSpawnEntry.Builder(ModEntities.DICRANURUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.LIOPLEURODON.get()).withWeight(4).withPackMin(1).withPackMax(2).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.LONCHODOMAS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.PLESIOSAURUS.get()).withWeight(1).withPackMax(1).withPackMax(2).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.SCOTOHARPES.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.WALLISEROPS.get()).withWeight(12).withPackMin(1).withPackMax(3).build()
 		).build(), getDeepWarmOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("warm_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.AQUILOLAMNA.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(2).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MOSASAURUS.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).build()
+			new CorvicraftSpawnEntry.Builder(ModEntities.AQUILOLAMNA.get()).withWeight(8).withPackMin(1).withPackMax(2).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(1).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MOSASAURUS.get()).withWeight(1).withPackSize(1).build()
 		).build(), getWarmOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("deep_warm_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.AQUILOLAMNA.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(2).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.DICRANURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.LIOPLEURODON.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(32).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.LONCHODOMAS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_CREATURE).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.SCOTOHARPES.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.WALLISEROPS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackMin(1).withPackMax(3).build()
+			new CorvicraftSpawnEntry.Builder(ModEntities.AQUILOLAMNA.get()).withWeight(8).withPackMin(1).withPackMax(2).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.DICRANURUS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(12).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.LIOPLEURODON.get()).withWeight(4).withPackMin(1).withPackMax(32).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.LONCHODOMAS.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.MEGALODON.get()).withWeight(4).withPackSize(1).withRarityModifiers(new RarityModifiers(0.5F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.SCOTOHARPES.get()).withWeight(12).withPackMin(1).withPackMax(3).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.WALLISEROPS.get()).withWeight(12).withPackMin(1).withPackMax(3).build()
 		).build(), getDeepWarmOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("frozen_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build()
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(4).build()
 		).build(), getFrozenOceanBiomes())
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("deep_frozen_ocean").withSpawns(
-			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMin(1).withPackMax(4).build(),
-			new CorvicraftSpawnEntry.Builder(ModEntities.PLESIOSAURUS.get()).withWeight(1).withSpawnCategory(MobCategory.WATER_CREATURE).withPackMax(1).withPackMax(2).build()
-		).build(), getDeepFrozenOceanBiomes())*/
+			new CorvicraftSpawnEntry.Builder(ModEntities.ICHTHYOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(4).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.PLESIOSAURUS.get()).withWeight(1).withPackMax(1).withPackMax(2).build()
+		).build(), getDeepFrozenOceanBiomes())
 		
 		// River
 		.withSpawnSet(new CorvicraftSpawnSet.Builder("river").withSpawns(
 			new CorvicraftSpawnEntry.Builder(ModEntities.CERATOSAURUS.get()).withWeight(4).withPackSize(1).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMETRODON.get()).withWeight(4).withPackMin(1).withPackMax(2).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DIMORPHODON.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(12).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.DIPLOCAULUS.get()).withWeight(12).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.DRYOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(3).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.EDAPHOSAURUS.get()).withWeight(4).withPackMin(1).withPackMax(3).build(),
-			//new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(4).withSpawnCategory(MobCategory.WATER_AMBIENT).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
+			new CorvicraftSpawnEntry.Builder(ModEntities.HENODUS.get()).withWeight(4).withPackSize(1).withRarityModifiers(new RarityModifiers(0.05F)).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.MEGANEURA.get()).withWeight(8).withPackMin(2).withPackMax(4).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PACHYCEPHALOSAURUS.get()).withWeight(8).withPackSize(1).build(),
 			new CorvicraftSpawnEntry.Builder(ModEntities.PACHYRHINOSAURUS.get()).withWeight(8).withPackMin(1).withPackMax(3).build(),
@@ -651,19 +650,19 @@ public class PrehistoricSpawns {
 			new CorvicraftSpawnEntry.Builder(ModEntities.TIKTAALIK.get()).withWeight(8).withPackMin(1).withPackMax(3).build()
 		).build(), getRiverBiomes())
 		
-		.withEntityTypes(ModEntities.ALLOSAURUS.get(), ModEntities.ANKYLOSAURUS.get(), /**ModEntities.AQUILOLAMNA.get(),*/ ModEntities.ARTHROPLEURA.get(),
+		.withEntityTypes(ModEntities.ALLOSAURUS.get(), ModEntities.ANKYLOSAURUS.get(), ModEntities.AQUILOLAMNA.get(), ModEntities.ARTHROPLEURA.get(),
 			ModEntities.BRACHIOSAURUS.get(), ModEntities.CERATOSAURUS.get(), ModEntities.CITIPATI.get(), ModEntities.COMPSOGNATHUS.get(), ModEntities.CONFUCIUSORNIS.get(),
-			/**ModEntities.CRASSIGYRINUS.get(),*/ ModEntities.DEINONYCHUS.get(), /**ModEntities.DICRANURUS.get(),*/ ModEntities.DILOPHOSAURUS.get(), ModEntities.DIMETRODON.get(),
-			ModEntities.DIMORPHODON.get(), /**ModEntities.DIPLOCAULUS.get(),*/ ModEntities.DIPLODOCUS.get(), ModEntities.DODO.get(), ModEntities.DRYOSAURUS.get(),
-			ModEntities.EDAPHOSAURUS.get(), ModEntities.ELASMOTHERIUM.get(), ModEntities.GALLIMIMUS.get(), ModEntities.GASTORNIS.get(), /**ModEntities.HENODUS.get(),*/
-			/**ModEntities.ICHTHYOSAURUS.get(),*/ ModEntities.KELENKEN.get(), /**ModEntities.LIOPLEURODON.get(), ModEntities.LONCHODOMAS.get(),*/ ModEntities.MAMMOTH.get(),
+			ModEntities.CRASSIGYRINUS.get(), ModEntities.DEINONYCHUS.get(), ModEntities.DICRANURUS.get(), ModEntities.DILOPHOSAURUS.get(), ModEntities.DIMETRODON.get(),
+			ModEntities.DIMORPHODON.get(), ModEntities.DIPLOCAULUS.get(), ModEntities.DIPLODOCUS.get(), ModEntities.DODO.get(), ModEntities.DRYOSAURUS.get(),
+			ModEntities.EDAPHOSAURUS.get(), ModEntities.ELASMOTHERIUM.get(), ModEntities.GALLIMIMUS.get(), ModEntities.GASTORNIS.get(), ModEntities.HENODUS.get(),
+			ModEntities.ICHTHYOSAURUS.get(), ModEntities.KELENKEN.get(), ModEntities.LIOPLEURODON.get(), ModEntities.LONCHODOMAS.get(), ModEntities.MAMMOTH.get(),
 			ModEntities.MEGALANIA.get(), ModEntities.MEGALOCEROS.get(), ModEntities.MEGALODON.get(), ModEntities.MEGANEURA.get(), ModEntities.MOSASAURUS.get(),
 			ModEntities.ORNITHOLESTES.get(), ModEntities.PACHYCEPHALOSAURUS.get(), ModEntities.PACHYRHINOSAURUS.get(), ModEntities.PARASAUROLOPHUS.get(),
-			ModEntities.PHORUSRHACOS.get(), ModEntities.PLATYBELODON.get(), /**ModEntities.PLESIOSAURUS.get(),*/ ModEntities.PROTOCERATOPS.get(),
+			ModEntities.PHORUSRHACOS.get(), ModEntities.PLATYBELODON.get(), ModEntities.PLESIOSAURUS.get(), ModEntities.PROTOCERATOPS.get(),
 			ModEntities.PSITTACOSAURUS.get(), ModEntities.PTERANODON.get(), ModEntities.QUAGGA.get(), ModEntities.QUETZALCOATLUS.get(), ModEntities.SARCOSUCHUS.get(),
-			/**ModEntities.SCOTOHARPES.get(),*/ ModEntities.SMILODON.get(), ModEntities.SPINOSAURUS.get(), ModEntities.STEGOSAURUS.get(), ModEntities.THERIZINOSAURUS.get(),
-			ModEntities.TIKTAALIK.get(), ModEntities.TITANIS.get(), ModEntities.TRICERATOPS.get(), ModEntities.TYRANNOSAURUS.get(), ModEntities.VELOCIRAPTOR.get()//,
-			/**ModEntities.WALLISEROPS.get()*/);
+			ModEntities.SCOTOHARPES.get(), ModEntities.SMILODON.get(), ModEntities.SPINOSAURUS.get(), ModEntities.STEGOSAURUS.get(), ModEntities.THERIZINOSAURUS.get(),
+			ModEntities.TIKTAALIK.get(), ModEntities.TITANIS.get(), ModEntities.TRICERATOPS.get(), ModEntities.TYRANNOSAURUS.get(), ModEntities.VELOCIRAPTOR.get(),
+			ModEntities.WALLISEROPS.get());
 		return spawnBuilder.build();
 	}
 	
@@ -1301,6 +1300,8 @@ public class PrehistoricSpawns {
 	public static ResourceLocation getBYG(String biomeIn) { return new ResourceLocation("byg", biomeIn); }
 	public static boolean checkBOP() { return ModList.get().isLoaded("biomesoplenty"); }
 	public static ResourceLocation getBOP(String biomeIn) { return new ResourceLocation("biomesoplenty", biomeIn); }
+	
+	public static Logger getLogger() { return LOGGER; }
 	
 	public class Config {
 		public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();

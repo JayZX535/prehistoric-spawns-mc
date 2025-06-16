@@ -85,7 +85,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 	
 	// Fossils and Archeology
-	implementation fg.deobf("curse.maven:fossils-223908:6225718")
+	implementation fg.deobf("curse.maven:fossils-223908:6562578")
 	
 	// Mixins
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
@@ -97,13 +97,14 @@ dependencies {
 	implementation fg.deobf("curse.maven:geckolib-388172:4181370")
 	
 	// More Hitboxes
-	implementation fg.deobf("curse.maven:more-hitboxes-1115989:6203359")
+	implementation fg.deobf("curse.maven:more-hitboxes-1115989:6296346")
 	
 	// Terrablender
 	implementation fg.deobf("curse.maven:terrablender-563928:3957976")
 	
 	// CorviCraft Spawn Utility
-	implementation fg.deobf("curse.maven:corvicraft-spawn-utility-960698:6285378")
+	implementation fg.deobf("curse.maven:corvicraft-spawn-utility-960698:6293260")
+	
 }
 
 tasks.named('processResources', ProcessResources).configure {
